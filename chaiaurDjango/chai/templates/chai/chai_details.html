@@ -1,0 +1,37 @@
+
+{% extends "layout.html"%}
+
+{% block title %}
+Chai Detail Page 
+{% endblock %}
+
+{% block content %}
+
+<h1> Chai Detail Page  </h1>
+<div class="bg-blue-800 p-6 rounded "> 
+    <img class="rounded shadow-lg w-auto m-auto flex items-center justify-center h-screen " src="{{chai.image.url}}">
+    <h2 class=" text-2xl font-bold">{{chai.name}}</h2>
+    <h3 class="text-1xl font-bold">{{chai.description}}</h3>
+
+   <div class="grid grid-flow-col">
+    <a href="{% url 'chai_details' chai.id  %}"> 
+        <button type="button"
+        class="inline-flex items-center w-[100%] justify-center px-4 py-2 border-transparent text-sm font-medium rounded-md text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 ml-0 mr-2"
+        >
+        {{chai.type}} - $ {{chai.price}}
+        </button>
+        </a>
+    <a href="{% url 'all_chai'  %}"> 
+        <button type="button"
+        class="inline-flex items-center w-[100%] justify-center px-4 py-2 border-transparent text-sm font-medium rounded-md text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 ml-2 mr-3"
+        >
+        Back
+        </button>
+        </a>
+
+   </div>
+    </div>
+
+   
+
+{% endblock %}

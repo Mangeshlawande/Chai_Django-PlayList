@@ -1,0 +1,9 @@
+>> django-admin startproject chaiaurDjango
+   >>  django-admin startapp chaiaurDjango
+   python3 manage.py runserver 
+   python3 manage.py runserver 8080
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+user ==>request ==>  django ==> url resolver  ===> urls.py ===> urls.py ===> views.py{template /response }  ==> Models.py ==> database ==> response back user ;
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
