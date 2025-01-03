@@ -7,11 +7,13 @@ Chai Detail Page
 
 {% block content %}
 
-<h1> Chai Detail Page  </h1>
+<h1 class="text-3xl font-bold "> Chai Detail Page  </h1>
 <div class="bg-blue-800 p-6 rounded "> 
     <img class="rounded shadow-lg w-auto m-auto flex items-center justify-center h-screen " src="{{chai.image.url}}">
     <h2 class=" text-2xl font-bold">{{chai.name}}</h2>
     <h3 class="text-1xl font-bold">{{chai.description}}</h3>
+     <p>Date Added: {{ chai.date_added }}</p>
+
 
    <div class="grid grid-flow-col">
     <a href="{% url 'chai_details' chai.id  %}"> 

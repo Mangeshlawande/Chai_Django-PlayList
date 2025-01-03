@@ -14,5 +14,5 @@ def contact(request):
     # return HttpResponse("Hello, World. You are at chai aur Django contact page")
     return render(request, 'website/contact.html')
 
-def feedback(request):
-    return HttpResponse("Hello World , You are at chai aur Django Feedback page !!")
+def services(request):
+    return render(request, 'website/services.html')

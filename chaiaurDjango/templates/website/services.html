@@ -1,0 +1,108 @@
+{% load static tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="{% static 'style1.css' %}">
+
+    {% tailwind_css %}
+
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white py-6 text-center">
+        <h1 class="text-4xl font-bold">Our Services</h1>
+        <p class="mt-2 text-lg">We provide the best solutions for your needs</p>
+    </header>
+    <a href="{% url 'home' %}"> 
+        <button type="button"
+        class="inline-flex items-center w-[100%] justify-center px-4 py-2 border-transparent text-sm font-medium rounded-md text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 "
+        >
+        Home
+        </button>
+        </a>
+
+    <!-- Services Section -->
+    <section class="py-10 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-6">What We Offer</h2>
+            <p class="text-gray-600 mb-10">
+                Explore the wide range of services we provide to help your business thrive.
+            </p>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="text-4xl text-gray-800 mb-4">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Web Development</h3>
+                    <p class="text-gray-600">
+                        Build responsive and modern websites tailored to your needs.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="text-4xl text-gray-800 mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">SEO Optimization</h3>
+                    <p class="text-gray-600">
+                        Improve your website's visibility and ranking on search engines.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="text-4xl text-gray-800 mb-4">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Mobile Development</h3>
+                    <p class="text-gray-600">
+                        Create powerful mobile apps for Android and iOS platforms.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="text-4xl text-gray-800 mb-4">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Data Analysis</h3>
+                    <p class="text-gray-600">
+                        Leverage data-driven insights to grow your business.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="text-4xl text-gray-800 mb-4">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Cloud Solutions</h3>
+                    <p class="text-gray-600">
+                        Scale your business with secure and efficient cloud services.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="text-4xl text-gray-800 mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Cybersecurity</h3>
+                    <p class="text-gray-600">
+                        Protect your systems and data with top-notch security measures.
+                    </p>
+                </div>
+            </div>
+        </div>
+      
+    </section>
+</body>
+</html>

@@ -1,3 +1,4 @@
+{% load static tailwind_tags %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -6,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About US </title>
     <link rel="stylesheet" href="{% static 'style1.css' %}">
-
+    {% tailwind_css %}
 </head>
 <body>
     <h1>What Is an About Us Page?</h1>
@@ -23,6 +24,13 @@ With an About Us page, you can begin to form an emotional relationship with cust
 
 So how can you create one that resonates? Let’s look at some of the components you need to include in your About Us page.
     </div>
+    <a href="{% url 'home' %}"> 
+        <button type="button"
+        class="inline-flex items-center w-[100%] justify-center px-4 py-2 border-transparent text-sm font-medium rounded-md text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 "
+        >
+        Home
+        </button>
+        </a>
     
 </body>
 </html>
